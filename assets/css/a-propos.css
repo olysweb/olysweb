@@ -1,0 +1,85 @@
+#a-propos {
+  background: var(--gradient);
+  margin: 0 50px 50px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--shadow);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+
+  @media screen and (max-width: 1110px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 576px) {
+    margin: 50px 20px;
+  }
+
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+
+    h2,
+    p {
+      color: var(--white);
+    }
+  }
+
+  .testimonials {
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+    background: var(--white);
+
+    @media screen and (max-width: 576px) {
+      padding: 50px 20px;
+    }
+
+    .quote {
+      width: 80px;
+
+      @media screen and (max-width: 576px) {
+        width: 40px;
+      }
+    }
+
+    .person {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+
+      img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px var(--shadow);
+
+        @media screen and (max-width: 576px) {
+          display: none;
+        }
+      }
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
