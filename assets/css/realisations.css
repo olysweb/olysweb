@@ -17,6 +17,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
     gap: 50px;
 
     @media screen and (max-width: 960px) {
@@ -28,8 +29,9 @@
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       gap: 50px;
+      height: 100%;
 
       .screenshot {
         width: 100%;
