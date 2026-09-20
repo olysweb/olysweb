@@ -1,0 +1,28 @@
+#avantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 50px;
+
+  @media screen and (max-width: 1110px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 576px) {
+    margin: 50px 20px;
+  }
+
+  .item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 50px;
+    background: var(--bg-gold-gradient);
+    box-shadow: 5px 5px 10px var(--shadow);
+    border-radius: 10px;
+  }
+}

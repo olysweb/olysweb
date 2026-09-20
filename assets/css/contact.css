@@ -1,0 +1,23 @@
+#contact {
+  background: var(--gradient);
+  margin: 0 50px 50px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+
+  @media screen and (max-width: 576px) {
+    margin: 0 20px 50px;
+  }
+
+  h2,
+  p {
+    color: var(--white);
+  }
+}

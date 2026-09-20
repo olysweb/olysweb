@@ -1,0 +1,48 @@
+#hero {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 960px) {
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (max-width: 576px) {
+    margin: 50px 20px;
+  }
+
+  img {
+    width: 70%;
+    margin: 0 auto;
+    filter: drop-shadow(5px 5px 10px var(--shadow));
+
+    @media screen and (max-width: 960px) {
+      margin-top: 50px;
+    }
+  }
+
+  .text {
+    background: url(../images/hero-bg.png) center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--shadow);
+    text-align: center;
+
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+
+      @media screen and (max-width: 576px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

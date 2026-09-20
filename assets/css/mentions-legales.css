@@ -1,0 +1,17 @@
+#mentions-legales {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 50px 50px;
+
+  h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--tertiary);
+
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+    }
+  }
+}
